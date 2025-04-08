@@ -1,8 +1,7 @@
 package model;
 
 public class Friend
-{
-    
+{   
     // Instance varible describers for Friend
     private String name;
     private String phoneNo;
@@ -11,15 +10,18 @@ public class Friend
     private String city;
     
     //Constructor to initialize instance variables.
-    public Friend(String name, String phoneNo){
+    public Friend(String name, String phoneNo, String address, int postalCode, String city)
+    {
         this.name = name;
         this.phoneNo = phoneNo;
+        this.address = address;
+        this.postalCode = postalCode;
+        this.city = city;
     }
     
     //get methods for instance variables.
     public String getName(){
-    return name;
-        
+        return name;       
     }
     
     public String getPhoneNo(){

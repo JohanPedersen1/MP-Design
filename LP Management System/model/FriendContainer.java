@@ -8,7 +8,7 @@ public class FriendContainer
     
     private FriendContainer()
     {
-        
+        friends = new ArrayList<>();
     }
     
     public static FriendContainer getInstance(){
@@ -19,18 +19,18 @@ public class FriendContainer
     }
     
     public Friend getFriend(String name, String phoneNo)
-    {
-        if (name != null && !name.isEmpty()){
+    {        
+        if (phoneNo != null && !phoneNo.isEmpty()){
             for(Friend f : friends){
-                if (f.getName() == name)
+                if (f.getPhoneNo() == phoneNo)
                 {
                     return f;
                 }
             }
         }
-        else if (phoneNo != null && !phoneNo.isEmpty()){
+        else if (name != null && !name.isEmpty()){
             for(Friend f : friends){
-                if (f.getPhoneNo() == phoneNo)
+                if (f.getName() == name)
                 {
                     return f;
                 }

@@ -23,11 +23,9 @@ public class Copy
 
     public String getPurchaseDate(){
         return purchaseDate;
-
     }
 
     public double getPurchasePrice(){
         return purchasePrice;
-
     }
 }

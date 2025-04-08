@@ -10,5 +10,8 @@ package controller;
 public class LoanController
 {
 
-
+    public LoanController()
+    {
+        
+    }
 }

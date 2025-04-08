@@ -21,11 +21,10 @@ public class LP
         this.title = title;
         this.artist = artist;
         this.publicationDate = publicationDate;
-        ArrayList<String>list = new ArrayList <>();
+        copies = new ArrayList<>();
     }
 
-    public Copy getCopy(int serialNo){ 
-    
+    public Copy getCopy(int serialNo){    
         for(Copy c : copies)
         {
             if(c.getSerialNo() == serialNo) {
@@ -35,8 +34,7 @@ public class LP
         
         return null;
     }
-        
-    
+           
     //Getters 
     // Optional getter methods, in case you need them in the future
     public long getBarcode (){

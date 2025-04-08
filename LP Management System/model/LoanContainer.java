@@ -1,6 +1,5 @@
 package model;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * The class LoanContainer is coded with a singleton.
@@ -19,56 +18,40 @@ public class LoanContainer
     private LoanContainer()
     {
         // The contructor creates a new ArrayList with objects from the Loan class
-        loan = new ArrayList<>();           
+        loans = new ArrayList<>();           
     }
     
     /**
      * A get method, that gets an instance from other classes.
      */
     public static LoanContainer getInstance(){
-        instance = instance;
         if(instance == null){
             instance = new LoanContainer();
         }
         return instance;
     }
     
-    public ArrayList<Loan> getLoanByNumber(){
-        for(Loan loan : loans){
-            return new ArrayList<>(loans);
-        }   
-    }
-    
-    public boolean addLoan(Loan l){
-        return loans.add(loan);
-    }
-    
-    public boolean addLoan(Loan l){
-        Loan conflict = findLoanByNumber(loan.getLoanNumber());
-        boolean res = false;
-        if(conflict == null){
-            loans.add(loan);
-            res = true;
-            
-            loan.setNo(nextNo);
-            nextNo++;
-        }
-        return res;
-    }
-    
-    public Loan findLoanByNumber(int loanNumber){
-        Loan res = null;
-        Iterator<Loan> lit = loans.iterator();
-        while(lit.hasNext() && res == null){
-            Loan currLoan = lit.next();
-            if(currLoan.getLoanNumber()= loanNumber){
-                res = currLoan;
+    public Loan getLoanByNumber(int loanNumber){
+        for(Loan l : loans){
+            if (l.getLoanNumber() == loanNumber)
+            {
+                return l;
             }
         }
-        return res;
+        return null;
     }
     
-    public Boolean remove(Loan loan){
-        return loans.remove(loan);
+    public void addLoan(Loan l){
+        loans.add(l);
+    }
+    
+    public void remove(int loanNumber){
+        for (int i = 0; i < loans.size(); i++)
+        {
+            if (loans.get(i).getLoanNumber() == loanNumber)
+            {
+                loans.remove(i);
+            }
+        }
     }
 }

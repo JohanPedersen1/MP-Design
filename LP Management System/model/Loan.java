@@ -1,7 +1,5 @@
 package model;
 
-
-
 public class Loan
 {
     // Instance varible describers for loan
