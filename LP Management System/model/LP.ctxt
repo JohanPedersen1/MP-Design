@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.target=LP
-comment1.params=
-comment1.target=LP()
+comment1.params=barcode\ title\ artist\ publicationDate
+comment1.target=LP(long,\ java.lang.String,\ java.lang.String,\ java.lang.String)
 numComments=2

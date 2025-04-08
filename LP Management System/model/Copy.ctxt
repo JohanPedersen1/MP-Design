@@ -1,5 +1,11 @@
 #BlueJ class context
 comment0.target=Copy
-comment1.params=
-comment1.target=Copy()
-numComments=2
+comment1.params=serialNo\ purchaseDate\ purchasePrice
+comment1.target=Copy(int,\ java.lang.String,\ double)
+comment2.params=
+comment2.target=int\ getSerialNo()
+comment3.params=
+comment3.target=java.lang.String\ getPurchaseDate()
+comment4.params=
+comment4.target=double\ getPurchasePrice()
+numComments=5
