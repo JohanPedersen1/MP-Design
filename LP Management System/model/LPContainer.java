@@ -27,4 +27,12 @@ public class LPContainer
         return instance;
     }
     
+    public LP findCopyInLP(int serialNo){
+        for(LP p :lps){
+            if(p.getCopy(serialNo).getSerialNo() == serialNo){
+                return p;
+            }
+        }
+        return null;
+    }
 }
