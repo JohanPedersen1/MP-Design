@@ -6,12 +6,17 @@ editor.fx.0.y=0
 objectbench.height=91
 objectbench.width=439
 package.divider.horizontal=0.5997854077253219
+<<<<<<< Updated upstream
 package.divider.vertical=0.8787878787878789
 package.editor.height=712
+=======
+package.divider.vertical=0.8741044012282497
+package.editor.height=676
+>>>>>>> Stashed changes
 package.editor.width=654
 package.editor.x=0
 package.editor.y=0
-package.frame.height=918
+package.frame.height=881
 package.frame.width=780
 package.numDependencies=0
 package.numTargets=3
