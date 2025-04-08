@@ -10,6 +10,7 @@ public class Loan
     private String returnDate;
     private String status;
     
+    //Constructor to initialize instance variables.
     public Loan(int loanNumber, String borrowDate, String returnDate, String status)
     {
         this.loanNumber = loanNumber;

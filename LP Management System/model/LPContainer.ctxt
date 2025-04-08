@@ -1,5 +1,10 @@
 #BlueJ class context
 comment0.target=LPContainer
+comment0.text=\r\n\ This\ class\ called\ LP\ Container\ shows\ a\ singleton\ \r\n
 comment1.params=
 comment1.target=LPContainer()
-numComments=2
+comment1.text=\r\n\ Creator\ has\ an\ ArrayList\r\n
+comment2.params=
+comment2.target=LPContainer\ getInstance()
+comment2.text=\r\n\ Add\ a\ getMethod\ \r\n\ @return\ instance\r\n
+numComments=3
