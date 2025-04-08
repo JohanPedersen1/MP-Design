@@ -2,4 +2,12 @@
 comment0.target=Loan
 comment1.params=
 comment1.target=Loan()
-numComments=2
+comment2.params=
+comment2.target=int\ getLoanNumber()
+comment3.params=
+comment3.target=java.lang.String\ getBorrowDate()
+comment4.params=
+comment4.target=java.lang.String\ getReturnDate()
+comment5.params=
+comment5.target=java.lang.String\ getStatus()
+numComments=6
