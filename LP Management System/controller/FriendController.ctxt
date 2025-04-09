@@ -1,9 +1,19 @@
 #BlueJ class context
 comment0.target=FriendController
+comment0.text=\r\n\ Class\ that\ handles\ friends\ and\ friend\ container.\r\n
 comment1.params=
 comment1.target=FriendController()
-comment2.params=name\ phoneNo
-comment2.target=model.Friend\ findFriend(java.lang.String,\ java.lang.String)
-comment3.params=name\ phoneNo\ address\ postalCode\ city
-comment3.target=model.Friend\ makeFriend(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
-numComments=4
+comment1.text=\r\n\ Initialize\ FriendController.\r\n
+comment2.params=phoneNo
+comment2.target=model.Friend\ findFriendByPhone(java.lang.String)
+comment2.text=\r\n\ Get\ friend\ by\ comparing\ phone\ number.\r\n\ @phoneNo\ The\ phone\ number\ to\ compare.\r\n
+comment3.params=name
+comment3.target=model.Friend\ findFriendByName(java.lang.String)
+comment3.text=\r\n\ Get\ friend\ by\ comparing\ name.\r\n\ @name\ The\ name\ to\ compare.\r\n
+comment4.params=name\ phoneNo\ address\ postalCode\ city
+comment4.target=model.Friend\ makeFriend(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment4.text=\r\n\ Make\ new\ friend\ and\ add\ it\ to\ container.\r\n\ @name\ The\ name\ of\ the\ friend.\r\n\ @phoneNo\ The\ phone\ number\ of\ the\ friend.\r\n\ @address\ The\ address\ of\ the\ friend.\r\n\ @postalCode\ The\ postal\ code\ of\ the\ friend.\r\n\ @city\ The\ city\ of\ the\ friend.\r\n
+comment5.params=
+comment5.target=void\ printAllFriends()
+comment5.text=\r\n\ Print\ a\ list\ of\ all\ friends.\r\n
+numComments=6

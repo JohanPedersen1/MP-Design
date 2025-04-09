@@ -1,8 +1,10 @@
 package model;
 
+/**
+* Class that represents a loan.
+*/
 public class Loan
 {
-    // Instance varible describers for loan
     private int loanNumber;
     private String borrowDate;
     private String returnDate;
@@ -10,7 +12,9 @@ public class Loan
     private Friend friend;
     private Copy copy;
     
-    //Constructor to initialize instance variables.
+    /**
+     * Initialize Loan.
+     */
     public Loan(int loanNumber, String borrowDate, String returnDate)
     {
         this.loanNumber = loanNumber;
@@ -18,28 +22,67 @@ public class Loan
         this.returnDate = returnDate;
     }
     
-    //get methods for Instance variables
-    public int getLoanNumber(){
+    /**
+     * @return The loan number.
+     */
+    public int getLoanNumber()
+    {
         return loanNumber;
     }
     
-    public String getBorrowDate(){
+    /**
+     * @return The borrow date.
+     */
+    public String getBorrowDate()
+    {
         return borrowDate;
     }
     
-    public String getReturnDate(){
+    /**
+     * @return The return date.
+     */
+    public String getReturnDate()
+    {
         return returnDate;
     }
     
-    public String getStatus(){
+    /**
+     * @return The status.
+     */
+    public String getStatus()
+    {
         return status;
     }
     
+    /**
+     * @return The friend.
+     */
+    public Friend getFriend()
+    {
+        return friend;
+    }
+    
+    /**
+     * @return The copy.
+     */
+    public Copy getCopy()
+    {
+        return copy;
+    }
+    
+    /**
+     * Set which friend is lending.
+     * @param friend The friend to set.
+     */
     public void setFriend(Friend friend)
     {
         this.friend = friend;
     }
     
+    /**
+     * Set which copy is lended.
+     * @param copy The copy to set.
+     */
     public void setCopy(Copy copy)
     {
         this.copy = copy;

@@ -2,37 +2,43 @@ package model;
 import java.util.ArrayList;
 
 /**
- * The class LoanContainer is coded with a singleton.
+ * Singleton class that stores loans in an arraylist. 
  */
 public class LoanContainer
 {
-    // An ArrayList for storing the loans from the Loan class
     private ArrayList<Loan> loans;
-    // In a singleton, the instance variable is made static, which means that it belongs
-    // to the class.
     private static LoanContainer instance;
     
     /**
-     * A constructor for the class that initializes the instance variables
+     * Initialize ArrayList
      */
     private LoanContainer()
     {
-        // The contructor creates a new ArrayList with objects from the Loan class
         loans = new ArrayList<>();           
     }
     
     /**
-     * A get method, that gets an instance from other classes.
+     * Make sure singleton is instantiated only once.
+     * @return this instance
      */
-    public static LoanContainer getInstance(){
-        if(instance == null){
+    public static LoanContainer getInstance()
+    {
+        if(instance == null)
+        {
             instance = new LoanContainer();
         }
         return instance;
     }
     
-    public Loan getLoanByNumber(int loanNumber){
-        for(Loan l : loans){
+    /**
+     * Loop through loans and compare loan number.
+     * @param loanNumber The loan number to compare.
+     * @return The loan which matches number.
+     */
+    public Loan getLoanByNumber(int loanNumber)
+    {
+        for(Loan l : loans)
+        {
             if (l.getLoanNumber() == loanNumber)
             {
                 return l;
@@ -41,17 +47,51 @@ public class LoanContainer
         return null;
     }
     
-    public void addLoan(Loan l){
+    /**
+     * Add a loan to loans.
+     * @param l The loan to add.
+     */
+    public void addLoan(Loan l)
+    {
         loans.add(l);
     }
     
-    public void remove(int loanNumber){
+    /**
+     * Remove a loan from loans.
+     * @param loanNumber Index of the loan to remove.
+     */
+    public void remove(int loanNumber)
+    {
         for (int i = 0; i < loans.size(); i++)
         {
             if (loans.get(i).getLoanNumber() == loanNumber)
             {
                 loans.remove(i);
+                break;
             }
+        }
+    }
+    
+    /**
+     * @return The size of loans.
+     */
+    public int getSize()
+    {
+        return loans.size();
+    }
+    
+    /**
+     * Print a list of all loan friend names and which LP title they have borrowed.
+     */
+    public void printAllLoans()
+    {
+        System.out.println("****** Lån ******");
+        
+        for(Loan l : loans)
+        {
+            System.out.print(l.getFriend().getName() + " har lånt ");
+            System.out.println(LPContainer.getInstance().findLPBySerial(l.getCopy().getSerialNo()).getTitle());
+            System.out.println();
         }
     }
 }
