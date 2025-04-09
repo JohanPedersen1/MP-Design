@@ -95,26 +95,25 @@ public class LoanMenu {
         Scanner keyboard = new Scanner(System.in);
         System.out.println(" (y) Godkend lån.");
         System.out.println(" (n) Afvis lån.");
-        
-        while (keyboard.hasNext()) {
-            if(keyboard.next().equalsIgnoreCase("y") || keyboard.next().equalsIgnoreCase("n"))
-            {
-                System.out.println("Skriv y eller n, makker");
-                break;
-            }
 
-            System.out.println(keyboard.next());
-        }
-        
-        String choice = keyboard.next();
-        
-        if (choice.equalsIgnoreCase("y"))
+        while(true)
         {
-            return true;
-        }
-        else
-        {
-            return false;
+            String choice = keyboard.next();
+            
+            if (choice.equalsIgnoreCase("y"))
+            {
+                System.out.println("Lån godkendt.");
+                return true;
+            }
+            else if (choice.equalsIgnoreCase("n"))
+            {
+                System.out.println("Lån annulleret.");
+                return false;
+            }
+            else
+            {
+                System.out.println("Skriv y eller n, makker.");
+            }
         }       
     }
 }

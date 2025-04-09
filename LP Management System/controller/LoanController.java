@@ -70,6 +70,10 @@ public class LoanController
     
     public void confirmLoan()
     {
-        loanMenu.enterConfirmation();
+        if (loanMenu.enterConfirmation())
+        {
+            loanContainer.addLoan(l);
+        }
+        
     }
 }
