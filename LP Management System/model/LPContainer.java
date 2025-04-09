@@ -1,6 +1,6 @@
 package model;
 import java.util.ArrayList;
-import java.util.Iterator;
+
 /**
  * This class called LP Container shows a singleton 
  */
@@ -34,5 +34,12 @@ public class LPContainer
             }
         }
         return null;
+    }
+    
+    public void addCopy(Copy copy, long barcode, String title, String artist, String publicationDate)
+    {
+        LP lp = new LP(barcode, title, artist, publicationDate);
+        lp.addCopy(copy);
+        lps.add(lp);
     }
 }

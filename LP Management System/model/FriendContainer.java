@@ -18,6 +18,11 @@ public class FriendContainer
         return instance;
     }
     
+    public void addFriend(Friend friend)
+    {
+        friends.add(friend);
+    }
+    
     public Friend getFriend(String name, String phoneNo)
     {        
         if (phoneNo != null && !phoneNo.isEmpty()){

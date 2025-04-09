@@ -14,4 +14,11 @@ public class FriendController
     {
         return friendContainer.getFriend(name, phoneNo);
     }
+    
+    public Friend makeFriend(String name, String phoneNo, String address, int postalCode, String city)
+    {        
+        Friend friend = new Friend(name, phoneNo, address, postalCode, city);
+        friendContainer.addFriend(friend);
+        return friend;
+    }
 }

@@ -28,9 +28,9 @@ public class LoanMenu {
             {
                 case 1:
                   loanController.createNewLoan(
-                      enterInt("Skriv loan number"),
-                      enterString("Skriv borrow date"),
-                      enterString("Skriv return date"));
+                      enterInt("Skriv lånenummer"),
+                      enterString("Skriv udlånsdato"),
+                      enterString("Skriv returdato"));
                   break;
                 case 0:
                   running = false;
@@ -52,6 +52,32 @@ public class LoanMenu {
             keyboard.nextLine();
         }
         int choice = keyboard.nextInt();
+        return choice;
+    }
+    
+    public long enterLong(String message)
+    {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print(message);
+        
+        while (!keyboard.hasNextInt()) {
+            System.out.println("Input skal være et tal - prøv igen");
+            keyboard.nextLine();
+        }
+        long choice = keyboard.nextInt();
+        return choice;
+    }
+    
+    public double enterDouble(String message)
+    {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print(message);
+        
+        while (!keyboard.hasNextDouble()) {
+            System.out.println("Input skal være et tal - prøv igen");
+            keyboard.nextLine();
+        }
+        double choice = keyboard.nextInt();
         return choice;
     }
     

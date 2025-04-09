@@ -21,11 +21,40 @@ public class LoanController
     public void createNewLoan(int loanNumber, String borrowDate, String returnDate)
     {
         l = new Loan(loanNumber, borrowDate, returnDate);        
-        setCopy(copyController.findCopy(
-            loanMenu.enterInt("Skriv lige det der serial number der.")));
-        setFriend(friendController.findFriend(
+        
+        Copy copy = copyController.findCopy(loanMenu.enterInt("Skriv serienummer."));
+
+        if (copy == null)
+        {            
+            System.out.println("Kopi eksisterer ikke lad os registere den.");
+            copy = copyController.makeCopy(
+            loanMenu.enterInt("Skriv serienummer."),
+            loanMenu.enterString("Skriv købsdato."),
+            loanMenu.enterDouble("Skriv købspris."),
+            loanMenu.enterLong("Skriv stregkode."),
+            loanMenu.enterString("Skriv titel."),
+            loanMenu.enterString("Skriv artist."),
+            loanMenu.enterString("Skriv udgivelsesdato."));
+        }
+            
+        setCopy(copy);
+        
+        Friend friend = friendController.findFriend(
             loanMenu.enterString("Skriv navnet på din ven."), 
-            loanMenu.enterString("Skriv telefon nummeret på din ven.")));
+            loanMenu.enterString("Skriv telefon nummeret på din ven."));
+            
+        if (friend == null)
+        {            
+            System.out.println("Ven eksisterer ikke lad os registere dem.");
+            friend = friendController.makeFriend(loanMenu.enterString("Skriv navnet på din ven."),
+            loanMenu.enterString("Skriv telefon nummer."),
+            loanMenu.enterString("Skriv adresse."),
+            loanMenu.enterInt("Skriv post kode."),
+            loanMenu.enterString("Skriv by."));
+        }
+        
+        setFriend(friend);
+            
         confirmLoan();
     }
     
@@ -41,6 +70,6 @@ public class LoanController
     
     public void confirmLoan()
     {
-        
+        loanMenu.enterConfirmation();
     }
 }

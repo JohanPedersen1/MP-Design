@@ -2,4 +2,10 @@
 comment0.target=FriendContainer
 comment1.params=
 comment1.target=FriendContainer()
-numComments=2
+comment2.params=
+comment2.target=FriendContainer\ getInstance()
+comment3.params=friend
+comment3.target=void\ addFriend(Friend)
+comment4.params=name\ phoneNo
+comment4.target=Friend\ getFriend(java.lang.String,\ java.lang.String)
+numComments=5

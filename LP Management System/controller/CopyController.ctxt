@@ -1,4 +1,9 @@
 #BlueJ class context
 comment0.target=CopyController
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ CopyController\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-numComments=1
+comment1.params=
+comment1.target=CopyController()
+comment2.params=serialNo
+comment2.target=model.Copy\ findCopy(int)
+comment3.params=serialNo\ purchaseDate\ purchasePrice\ barcode\ title\ artist\ publicationDate
+comment3.target=model.Copy\ makeCopy(int,\ java.lang.String,\ double,\ long,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=4

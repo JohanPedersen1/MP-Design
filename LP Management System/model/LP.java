@@ -34,7 +34,12 @@ public class LP
         
         return null;
     }
-           
+    
+    public void addCopy(Copy copy)
+    {
+        copies.add(copy);
+    }
+    
     //Getters 
     // Optional getter methods, in case you need them in the future
     public long getBarcode (){

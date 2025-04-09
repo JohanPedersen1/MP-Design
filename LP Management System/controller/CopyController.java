@@ -14,4 +14,11 @@ public class CopyController
     {
         return lPContainer.findCopyInLP(serialNo);
     }
+    
+    public Copy makeCopy(int serialNo, String purchaseDate, double purchasePrice, long barcode, String title, String artist, String publicationDate)
+    {
+        Copy copy = new Copy(serialNo, purchaseDate, purchasePrice);
+        lPContainer.addCopy(copy, barcode, title, artist, publicationDate);
+        return copy;
+    }
 }
