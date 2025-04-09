@@ -1,13 +1,17 @@
 package controller;
+import model.*;
 
-
-/**
- * Write a description of class CopyController here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class CopyController
 {
+    LPContainer lPContainer;
     
+    public CopyController()
+    {
+        lPContainer = LPContainer.getInstance();
+    }
+    
+    public Copy findCopy(int serialNo)
+    {
+        return lPContainer.findCopyInLP(serialNo);
+    }
 }

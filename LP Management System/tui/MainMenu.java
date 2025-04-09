@@ -11,15 +11,12 @@ public class MainMenu {
     // instance variables 
     private LoanMenu loanMenu;
     
-
     /**
      * Constructor for objects of class MainMenu
      */
     public MainMenu() {
         // initialise instance variables
-        loanMenu = new LoanMenu();
-        
-       
+        loanMenu = new LoanMenu();      
     }
     
     public void start() {
@@ -72,10 +69,17 @@ public class MainMenu {
         int choice = keyboard.nextInt();
         return choice;
     }
-   
-    private void createTestData(){
-        //getInstance
-        //create some Friends and LPs
+    
+    public int enterCopySerialNo()
+    {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Skriv lige serial number på pladen.");
         
+        while (!keyboard.hasNextInt()) {
+            System.out.println("Input skal være et tal - prøv igen");
+            keyboard.nextLine();
+        }
+        int choice = keyboard.nextInt();
+        return choice;
     }
 }

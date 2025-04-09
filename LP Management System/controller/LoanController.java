@@ -1,17 +1,24 @@
 package controller;
+import model.*;
 
-
-/**
- * Write a description of class LoanController here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class LoanController
 {
-
+    CopyController copyController;
+    FriendController friendController;
+    LoanContainer loanContainer;
+    Loan l;
+    
     public LoanController()
     {
+        copyController = new CopyController();
+        friendController = new FriendController();
+        loanContainer = LoanContainer.getInstance();
+    }
+    
+    public void createNewLoan(int loanNumber, String borrowDate, String returnDate, String status)
+    {
+        l = new Loan(loanNumber, borrowDate, returnDate, status);
         
+        //l.setCopy(copyController.findCopy())
     }
 }

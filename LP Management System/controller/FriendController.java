@@ -1,13 +1,17 @@
 package controller;
+import model.*;
 
-
-/**
- * Write a description of class FriendController here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class FriendController
 {
-   
+    FriendContainer friendContainer;
+    
+    public FriendController()
+    {
+        friendContainer = FriendContainer.getInstance();
+    }
+    
+    public Friend findFriend(String name, String phoneNo)
+    {
+        return friendContainer.getFriend(name, phoneNo);
+    }
 }
