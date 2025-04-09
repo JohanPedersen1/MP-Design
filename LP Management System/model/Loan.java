@@ -7,6 +7,8 @@ public class Loan
     private String borrowDate;
     private String returnDate;
     private String status;
+    private Friend friend;
+    private Copy copy;
     
     //Constructor to initialize instance variables.
     public Loan(int loanNumber, String borrowDate, String returnDate, String status)
@@ -32,5 +34,15 @@ public class Loan
     
     public String getStatus(){
         return status;
+    }
+    
+    public void setFriend(Friend friend)
+    {
+        this.friend = friend;
+    }
+    
+    public void setCopy(Copy copy)
+    {
+        this.copy = copy;
     }
 }
