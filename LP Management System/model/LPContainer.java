@@ -29,7 +29,7 @@ public class LPContainer
     
     public Copy findCopyInLP(int serialNo){
         for(LP p :lps){
-            if(p.getCopy(serialNo).getSerialNo() == serialNo){
+            if(p.getCopy(serialNo) != null){
                 return p.getCopy(serialNo);
             }
         }
