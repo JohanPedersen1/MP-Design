@@ -1,5 +1,16 @@
 #BlueJ class context
 comment0.target=LoanContainer
+comment0.text=\r\n\ The\ class\ LoanContainer\ is\ coded\ with\ a\ singleton.\r\n
 comment1.params=
 comment1.target=LoanContainer()
-numComments=2
+comment1.text=\r\n\ A\ constructor\ for\ the\ class\ that\ initializes\ the\ instance\ variables\r\n
+comment2.params=
+comment2.target=LoanContainer\ getInstance()
+comment2.text=\r\n\ A\ get\ method,\ that\ gets\ an\ instance\ from\ other\ classes.\r\n
+comment3.params=loanNumber
+comment3.target=Loan\ getLoanByNumber(int)
+comment4.params=l
+comment4.target=void\ addLoan(Loan)
+comment5.params=loanNumber
+comment5.target=void\ remove(int)
+numComments=6

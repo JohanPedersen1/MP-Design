@@ -20,16 +20,17 @@ public class LoanMenu {
     }
 
     public void start() {
-        loanMenu();
-    }
-
-    private void loanMenu() {
         boolean running = true;
-        while (running) {
-            int choice = writeLoanMenu();
-            switch (choice) {
+        while (running) 
+        {
+            int choice = enterInt("****** Udlånsmenu ******\n (1) Opret lån\n (0) Tilbage\n Vælg:");
+            switch (choice) 
+            {
                 case 1:
-                  
+                  loanController.createNewLoan(
+                      enterInt("Skriv loan number"),
+                      enterString("Skriv borrow date"),
+                      enterString("Skriv return date"));
                   break;
                 case 0:
                   running = false;
@@ -41,28 +42,10 @@ public class LoanMenu {
         }
     }
     
-    private int writeLoanMenu() {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("****** Udlånsmenu ******");
-        System.out.println(" (1) Opret lån");
-        System.out.println(" (0) Tilbage");
-        System.out.print("\n Vælg:");
-        int choice = getIntegerFromUser(keyboard);
-        return choice;
-    }
-    
-    private int getIntegerFromUser(Scanner keyboard) {
-        while (!keyboard.hasNextInt()) {
-            System.out.println("Input skal være et tal - prøv igen");
-            keyboard.nextLine();
-        }
-        return keyboard.nextInt();
-    }
-    
-    public int enterCopySerialNo()
+    public int enterInt(String message)
     {
         Scanner keyboard = new Scanner(System.in);
-        System.out.print("Skriv lige serial number på pladen.");
+        System.out.print(message);
         
         while (!keyboard.hasNextInt()) {
             System.out.println("Input skal være et tal - prøv igen");
@@ -72,19 +55,10 @@ public class LoanMenu {
         return choice;
     }
     
-    public String enterFriendName()
+    public String enterString(String message)
     {
         Scanner keyboard = new Scanner(System.in);
-        System.out.print("Skriv lige navnet på din kammerat.");
-        
-        String choice = keyboard.next();
-        return choice;
-    }
-    
-    public String enterFriendPhoneNo()
-    {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.print("Skriv lige telefon nummeret på din kammerat.");
+        System.out.print(message);
         
         String choice = keyboard.next();
         return choice;

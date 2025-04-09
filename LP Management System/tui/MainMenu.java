@@ -15,21 +15,17 @@ public class MainMenu {
      * Constructor for objects of class MainMenu
      */
     public MainMenu() {
-        // initialise instance variables
-        loanMenu = new LoanMenu();      
+        loanMenu = new LoanMenu(); 
+        start();
     }
     
     public void start() {
-        mainMenu();
-    }
-    
-    private void mainMenu() {
         boolean running = true;
         while (running) {
             int choice = writeMainMenu();
             switch (choice) {
                 case 1:
-                  System.out.println("Denne er ikke implementeret endnu");
+                  loanMenu.start();
                   break;
                 case 2:
                   System.out.println("Denne er ikke implementeret endnu");

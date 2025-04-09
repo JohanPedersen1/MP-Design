@@ -1,4 +1,13 @@
 #BlueJ class context
 comment0.target=LoanController
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ LoanController\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-numComments=1
+comment1.params=loanMenu
+comment1.target=LoanController(tui.LoanMenu)
+comment2.params=loanNumber\ borrowDate\ returnDate
+comment2.target=void\ createNewLoan(int,\ java.lang.String,\ java.lang.String)
+comment3.params=copy
+comment3.target=void\ setCopy(model.Copy)
+comment4.params=friend
+comment4.target=void\ setFriend(model.Friend)
+comment5.params=
+comment5.target=void\ confirmLoan()
+numComments=6

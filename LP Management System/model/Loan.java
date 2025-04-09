@@ -11,12 +11,11 @@ public class Loan
     private Copy copy;
     
     //Constructor to initialize instance variables.
-    public Loan(int loanNumber, String borrowDate, String returnDate, String status)
+    public Loan(int loanNumber, String borrowDate, String returnDate)
     {
         this.loanNumber = loanNumber;
         this.borrowDate = borrowDate;
         this.returnDate = returnDate;
-        this.status = status;
     }
     
     //get methods for Instance variables

@@ -1,4 +1,7 @@
 #BlueJ package file
+dependency1.from=MainMenu
+dependency1.to=LoanMenu
+dependency1.type=UsesDependency
 objectbench.height=96
 objectbench.width=456
 package.divider.horizontal=0.6000517063081696
@@ -9,7 +12,7 @@ package.editor.x=580
 package.editor.y=183
 package.frame.height=619
 package.frame.width=808
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=4
 package.showExtends=true
 package.showUses=true

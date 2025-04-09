@@ -18,11 +18,14 @@ public class LoanController
         this.loanMenu = loanMenu;
     }
     
-    public void createNewLoan(int loanNumber, String borrowDate, String returnDate, String status)
+    public void createNewLoan(int loanNumber, String borrowDate, String returnDate)
     {
-        l = new Loan(loanNumber, borrowDate, returnDate, status);        
-        setCopy(copyController.findCopy(loanMenu.enterCopySerialNo()));
-        setFriend(friendController.findFriend(loanMenu.enterFriendName(), loanMenu.enterFriendPhoneNo()));
+        l = new Loan(loanNumber, borrowDate, returnDate);        
+        setCopy(copyController.findCopy(
+            loanMenu.enterInt("Skriv lige det der serial number der.")));
+        setFriend(friendController.findFriend(
+            loanMenu.enterString("Skriv navnet på din ven."), 
+            loanMenu.enterString("Skriv telefon nummeret på din ven.")));
         confirmLoan();
     }
     
