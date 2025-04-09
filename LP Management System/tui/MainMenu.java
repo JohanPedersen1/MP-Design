@@ -68,18 +68,5 @@ public class MainMenu {
         }
         int choice = keyboard.nextInt();
         return choice;
-    }
-    
-    public int enterCopySerialNo()
-    {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.print("Skriv lige serial number på pladen.");
-        
-        while (!keyboard.hasNextInt()) {
-            System.out.println("Input skal være et tal - prøv igen");
-            keyboard.nextLine();
-        }
-        int choice = keyboard.nextInt();
-        return choice;
-    }
+    }        
 }

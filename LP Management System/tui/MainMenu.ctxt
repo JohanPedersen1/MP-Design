@@ -10,6 +10,4 @@ comment3.params=
 comment3.target=void\ mainMenu()
 comment4.params=
 comment4.target=int\ writeMainMenu()
-comment5.params=
-comment5.target=int\ enterCopySerialNo()
-numComments=6
+numComments=5
