@@ -57,7 +57,7 @@ public class LP
     /**
      * @return The barcode.
      */
-    public long getBarcode ()
+    public long getBarcode()
     {
         return barcode;
     }
@@ -65,7 +65,7 @@ public class LP
     /**
      * @return The title.
      */
-    public String getTitle ()
+    public String getTitle()
     {
         return title;
     }
