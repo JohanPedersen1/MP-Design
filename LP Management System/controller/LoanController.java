@@ -88,6 +88,7 @@ public class LoanController
     {
         if (menu.enterConfirmation())
         {
+            
             loanContainer.addLoan(loan);
         }
         

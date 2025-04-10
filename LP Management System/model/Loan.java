@@ -55,6 +55,15 @@ public class Loan
     }
     
     /**
+     * Set the status attribute.
+     * @param status The status to set.
+     */
+    public void setStatus(String status)
+    {
+        this.status = status;
+    }
+    
+    /**
      * @return The friend.
      */
     public Friend getFriend()
