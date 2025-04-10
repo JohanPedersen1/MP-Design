@@ -74,6 +74,9 @@ public class Menu
                     loanController.createNewLoan(
                         enterString("Skriv udlånsdato: "),
                         enterString("Skriv returdato: "));
+                        
+                    //if 
+                        
                     break;
                 case 0:
                     mainMenu();

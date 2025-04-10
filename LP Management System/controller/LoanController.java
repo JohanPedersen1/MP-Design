@@ -67,11 +67,12 @@ public class LoanController
     {
         friendController = new FriendController();               
         Friend friend = friendController.findFriendByPhone(menu.enterString("Skriv telefon nummeret på din ven: "));
-            
+        
         if (friend == null)
         {            
             System.out.println("Ven eksisterer ikke, lad os registere dem.");
-            friend = friendController.makeFriend(menu.enterString("Skriv navnet på din ven: "),
+            friend = friendController.makeFriend(
+            menu.enterString("Skriv navnet på din ven: "),
             menu.enterString("Skriv telefon nummer: "),
             menu.enterString("Skriv adresse: "),
             menu.enterInt("Skriv post kode: "),
