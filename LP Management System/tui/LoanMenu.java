@@ -28,9 +28,9 @@ public class LoanMenu {
             {
                 case 1:
                   loanController.createNewLoan(
-                      enterInt("Skriv loan number"),
-                      enterString("Skriv borrow date"),
-                      enterString("Skriv return date"));
+                      enterInt("Skriv lånenummer"),
+                      enterString("Skriv udlånsdato"),
+                      enterString("Skriv returdato"));
                   break;
                 case 0:
                   running = false;
