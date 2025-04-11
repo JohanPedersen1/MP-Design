@@ -1,15 +1,19 @@
 package model;
 
+/**
+* Class that represents a friend.
+*/
 public class Friend
 {   
-    // Instance varible describers for Friend
     private String name;
     private String phoneNo;
     private String address;
     private int postalCode;
     private String city;
     
-    //Constructor to initialize instance variables.
+    /**
+     * Initialize Friend.
+     */
     public Friend(String name, String phoneNo, String address, int postalCode, String city)
     {
         this.name = name;
@@ -19,24 +23,43 @@ public class Friend
         this.city = city;
     }
     
-    //get methods for instance variables.
-    public String getName(){
+    /**
+     * @return The name.
+     */
+    public String getName()
+    {
         return name;       
     }
     
-    public String getPhoneNo(){
+    /**
+     * @return The phone number.
+     */
+    public String getPhoneNo()
+    {
         return phoneNo;
     }
     
-    public String getAddress(){
+    /**
+     * @return The address.
+     */
+    public String getAddress()
+    {
         return address;
     }
     
-    public int getPostalCode(){
+    /**
+     * @return The postal code.
+     */
+    public int getPostalCode()
+    {
         return postalCode;
     }
     
-    public String getCity(){
+    /**
+     * @return The city.
+     */
+    public String getCity()
+    {
         return city;
     }
 }

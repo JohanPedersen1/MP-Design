@@ -1,14 +1,17 @@
 package model;
 
-
+/**
+* Class that represents a copy of an LP.
+*/
 public class Copy
 {
-    //// Instance varible describers for copy.
     private int serialNo;
     private String purchaseDate;
     private double purchasePrice;
     
-    //Constructor to initialize instance variables.
+    /**
+     * Initialize Copy.
+     */
     public Copy(int serialNo, String purchaseDate, double purchasePrice)
     {
         this.serialNo = serialNo;
@@ -16,16 +19,27 @@ public class Copy
         this.purchasePrice = purchasePrice;
     }
     
-    //get methods for instance variables.
-    public int getSerialNo(){
+    /**
+     * @return The serial number.
+     */
+    public int getSerialNo()
+    {
         return serialNo;
     }
 
-    public String getPurchaseDate(){
+    /**
+     * @return The purchase date.
+     */
+    public String getPurchaseDate()
+    {
         return purchaseDate;
     }
 
-    public double getPurchasePrice(){
+    /**
+     * @return The purchase price.
+     */
+    public double getPurchasePrice()
+    {
         return purchasePrice;
     }
 }

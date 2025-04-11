@@ -1,35 +1,29 @@
 package tui;
-
+import controller.*;
 
 /**
- * Write a description of class TryMe here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+* Class that creates friend and copy objects and adds them to containers.
+*/
 public class TryMe
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private Menu menu;
+    private FriendController friendController;
+    private CopyController copyController;
+    private LoanController loanController;
 
     /**
-     * Constructor for objects of class TryMe
-     */
+    * Objects are created and added to containers.
+    */
     public TryMe()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        friendController = new FriendController();
+        friendController.makeFriend("Simon", "30287596", "Ananasvej", 9000, "Aalborg");
+        friendController.makeFriend("Karen", "12345678", "Mexico", 9000, "Aalborg");
+        
+        copyController = new CopyController();
+        copyController.makeCopy(1, "01-01-2012", 9.99d, 888666L, "Dark side of the moon", "Pink Floyd", "01-05-1980");
+        copyController.makeCopy(2, "28-07-2012", 15.99d, 663366L, "Jylland", "Tobias Rahim", "01-05-1980");
+        
+        menu = new Menu();
     }
 }

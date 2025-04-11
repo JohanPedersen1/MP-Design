@@ -1,12 +1,22 @@
 #BlueJ class context
 comment0.target=LPContainer
-comment0.text=\r\n\ This\ class\ called\ LP\ Container\ shows\ a\ singleton\ \r\n
+comment0.text=\r\n\ Singleton\ class\ that\ stores\ LP's\ in\ an\ arraylist.\ \r\n
 comment1.params=
 comment1.target=LPContainer()
-comment1.text=\r\n\ Creator\ has\ an\ ArrayList\r\n
+comment1.text=\r\n\ Initialize\ ArrayList\r\n
 comment2.params=
 comment2.target=LPContainer\ getInstance()
-comment2.text=\r\n\ Add\ a\ getMethod\ \r\n\ @return\ instance\r\n
+comment2.text=\r\n\ Make\ sure\ singleton\ is\ instantiated\ only\ once.\ \r\n\ @return\ this\ instance\r\n
 comment3.params=serialNo
-comment3.target=LP\ findCopyInLP(int)
-numComments=4
+comment3.target=Copy\ findCopyInLP(int)
+comment3.text=\r\n\ Loop\ through\ copies\ in\ LP's\ and\ compare\ serialNo.\r\n\ @param\ serialNo\ The\ serial\ number\ to\ compare.\r\n\ @return\ The\ copy\ that\ matches\ or\ null.\r\n
+comment4.params=serialNo
+comment4.target=LP\ findLPBySerial(int)
+comment4.text=\r\n\ Loop\ through\ copies\ in\ LP's\ and\ compare\ serialNo.\r\n\ @param\ serialNo\ The\ serial\ number\ to\ compare.\r\n\ @return\ The\ LP\ that\ matches\ or\ null.\r\n
+comment5.params=copy\ barcode\ title\ artist\ publicationDate
+comment5.target=void\ addCopy(Copy,\ long,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment5.text=\r\n\ Add\ a\ copy\ to\ an\ LP\ which\ is\ added\ to\ LP's\r\n\ @param\ copy\ The\ copy\ to\ store\ in\ LP.\r\n\ @param\ barcode\ The\ LP\ barcode.\r\n\ @param\ title\ The\ LP\ title.\r\n\ @param\ artist\ The\ LP\ artist.\r\n\ @param\ publicationDate\ The\ LP\ publication\ date.\r\n
+comment6.params=
+comment6.target=void\ printAllLPs()
+comment6.text=\r\n\ Print\ a\ list\ of\ all\ LP\ artist\ and\ titles\r\n
+numComments=7

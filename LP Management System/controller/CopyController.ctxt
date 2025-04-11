@@ -1,4 +1,16 @@
 #BlueJ class context
 comment0.target=CopyController
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ CopyController\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-numComments=1
+comment0.text=\r\n\ Class\ that\ handles\ Copy,\ LP's\ and\ LP\ container.\r\n
+comment1.params=
+comment1.target=CopyController()
+comment1.text=\r\n\ Initialize\ CopyController.\r\n
+comment2.params=serialNo
+comment2.target=model.Copy\ findCopy(int)
+comment2.text=\r\n\ Find\ copy\ in\ LP\ container\ by\ comparing\ serial\ number.\r\n\ @param\ serialNo\ The\ serial\ number\ to\ compare.\r\n
+comment3.params=serialNo\ purchaseDate\ purchasePrice\ barcode\ title\ artist\ publicationDate
+comment3.target=model.Copy\ makeCopy(int,\ java.lang.String,\ double,\ long,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ Create\ and\ add\ a\ copy\ to\ an\ LP\ which\ is\ added\ to\ LP's.\r\n\ @param\ serialNo\ The\ serialNumber\ of\ the\ copy.\r\n\ @param\ purchaseDate\ The\ purchase\ date\ of\ the\ copy.\r\n\ @param\ purchasePrice\ The\ purchase\ price\ of\ the\ copy.\r\n\ @param\ barcode\ The\ LP\ barcode.\r\n\ @param\ title\ The\ LP\ title.\r\n\ @param\ artist\ The\ LP\ artist.\r\n\ @param\ publicationDate\ The\ LP\ publication\ date.\r\n
+comment4.params=
+comment4.target=void\ printAllLPs()
+comment4.text=\r\n\ Print\ a\ list\ of\ all\ LP's.\r\n
+numComments=5

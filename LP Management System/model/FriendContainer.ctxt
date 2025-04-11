@@ -1,5 +1,22 @@
 #BlueJ class context
 comment0.target=FriendContainer
+comment0.text=\r\n\ Singleton\ class\ that\ stores\ loans\ in\ an\ arraylist.\ \r\n
 comment1.params=
 comment1.target=FriendContainer()
-numComments=2
+comment1.text=\r\n\ Initialize\ ArrayList\r\n
+comment2.params=
+comment2.target=FriendContainer\ getInstance()
+comment2.text=\r\n\ Make\ sure\ singleton\ is\ instantiated\ only\ once.\r\n\ @return\ this\ instance\r\n
+comment3.params=friend
+comment3.target=void\ addFriend(Friend)
+comment3.text=\r\n\ Add\ friend\ to\ friends.\r\n\ @param\ friend\ The\ friend\ to\ add.\r\n
+comment4.params=phoneNo
+comment4.target=Friend\ getFriendByPhone(java.lang.String)
+comment4.text=\r\n\ Get\ friend\ by\ comparing\ phone\ number.\r\n\ @phoneNo\ The\ phone\ number\ to\ compare.\r\n
+comment5.params=name
+comment5.target=Friend\ getFriendByName(java.lang.String)
+comment5.text=\r\n\ Get\ friend\ by\ comparing\ name.\r\n\ @name\ The\ name\ to\ compare.\r\n
+comment6.params=
+comment6.target=void\ printAllFriends()
+comment6.text=\r\n\ Print\ a\ list\ of\ all\ friends.\r\n
+numComments=7
